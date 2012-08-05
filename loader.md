@@ -12,9 +12,9 @@ To get started:
 3. Open your file in the online Google Drive. It will show in a document viewer, but the important thing to find is the document's id. This shows up in the url: https://docs.google.com/file/d/{DOCUMENT ID}/edit
 .
 
-4. Create a new [Google Apps](https://developers.google.com/apps-script/execution_methods#web_app) application and paste in the loader code below. Be sure to customize it for the document id you found in step 3. Also, if your code requries any permissions, you'll have to reference them here since Apps Script isn't able to find them in a loaded file.
+4. Create a new [Google Apps](https://developers.google.com/apps-script/execution_methods#web_app) application and paste in the loader code below. Be sure to customize it for the document id you found in step 3. Also, if your code requires any permissions, you'll have to reference them here since Apps Script isn't able to find them in a loaded file.
 
-```
+```javascript
 function doGet() {
   loadFile('DOCUMENT ID');
   //your app entry here
@@ -39,6 +39,6 @@ function loadFile(fileId) {
 }
 ```
 
-That's it! If you distribute your application to other users (for example, by including it within a shared spreadsheet) remember to set the sharing permissions on the javascript files you are loading or a folder containing both the applicaiton and javascript files.
+That's it! If you distribute your application to other users (for example, by including it within a shared spreadsheet) remember to set the sharing permissions on the javascript files you are loading or a folder containing both the application and javascript files.
 
-You may also be interested in my open source [Apps Script user interface library](UiBot).
+You may also be interested in my open source [Apps Script user interface library](https://github.com/gotdan/uibot).
