@@ -5,6 +5,7 @@ The excellent syncing built into Google Drive makes it easy to create javascript
 You can even write code in [coffeescript](http://www.coffeescript.org) and have it automatically compile to javascript and sync to the cloud, ready to test. Finally, although Google recently introduced [Libraries](https://developers.google.com/apps-script/guide_libraries) in Google Apps, this approach represents a simple way to share code between projects while still supporting granular permissions.
 
 To get started:
+
 1. Set up [Google Drive syncing](http://support.google.com/drive/bin/answer.py?hl=en&answer=2374983) on your development computer.
 
 2. Create a new javascript or coffeescript file in your Google Drive folder (coffeescript folks may want to set up an [automatic compilation watcher](http://coffeescript.org/#usage) on that folder).
